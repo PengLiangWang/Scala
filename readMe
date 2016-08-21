@@ -1,0 +1,5 @@
+scala语法高亮显示
+1,  执行 
+mkdir -p ~/.vim/{ftdetect,indent,syntax} && for d in ftdetect indent syntax ; do curl -o ~/.vim/$d/scala.vim https://raw.githubusercontent.com/gchen/scala.vim/master/scala.vim; done
+2，在~/.vimrc中添加
+syntax on
