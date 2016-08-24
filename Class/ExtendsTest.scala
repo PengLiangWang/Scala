@@ -18,9 +18,14 @@ class Point(xc: Int, yc: Int){
         println("x 的坐标: " + x);
         println("y 的坐标: " + y);
     }
+
+    def method(a: Int){
+        println("a = "+ a)    
+    }
     
 }
 
+/*子类继承父类, 疑问: 重写方法, 和字段时为什么不加 override*/
 class Location(val xc: Int, val yc: Int, val zc: Int) extends Point(xc, yc){
     var z: Int = zc
 
@@ -35,13 +40,20 @@ class Location(val xc: Int, val yc: Int, val zc: Int) extends Point(xc, yc){
         println("z 的坐标: " + z);
 
     }    
+
+    def method(a: Int, b: Int){
+        println("b = " + b)
+    }
 }
 
+
 object ExtendsTest{
+
     def main(args: Array[String]){
         val pt = new Location(10, 20, 30);
 
         //移动到新的位置
         pt.move(10, 10, 10)
+        pt.method(1,2)
     }
 }

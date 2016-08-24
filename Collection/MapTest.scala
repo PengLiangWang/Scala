@@ -1,3 +1,4 @@
+/* 映射 */
 object MapTest{
    var A:Map[Char, Int] = Map()
    A += ('I' -> 1)
