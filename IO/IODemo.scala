@@ -1,7 +1,7 @@
 import scala.io.Source
 
 
-object FileTest{
+object IODemo{
     def main(args: Array[String]){
         val fileName="./test.txt"
 
@@ -10,7 +10,7 @@ object FileTest{
 
     def readAndPrint(fileName: String){
         val source = Source.fromFile(fileName)    
-        val lineIterator = source.getlines()
+        val lineIterator = source.getLines()
         for(l <- lineIterator){
             println(l)    
         }
