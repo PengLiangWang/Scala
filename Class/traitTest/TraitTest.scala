@@ -1,3 +1,5 @@
+
+/*Trait特性 相当于 java 的接口*/
 trait Friendly {
       def greet() = "Hi"
 }
