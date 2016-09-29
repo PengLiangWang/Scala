@@ -1,7 +1,8 @@
-
 /*Trait特性 相当于 java 的接口*/
+/* 重写Traitd的抽象方法不需要加override*/
+/* scala类只能有一个超类, 但是可以有任意数量的特质*/
 trait Friendly {
-      def greet() = "Hi"
+      def greet() = "Hi"   //非抽象方法
 }
 
 class Dog extends Friendly {

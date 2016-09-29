@@ -17,7 +17,7 @@ object University{
 
 object ObjecOps{
     def main(args: Array[String]): Unit = {
-         println(University.newStudenNo)   //第一次调用时，初始化成员变量 
+         println(University.newStudenNo)   //第一次调用时，初始化成员变量(val id = University.newStudenNo 会把studentNo初始化为 1) 
          println(University.newStudenNo) 
 
          println(University.printt)

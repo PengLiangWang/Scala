@@ -25,7 +25,7 @@ class Point(xc: Int, yc: Int){
     
 }
 
-/*子类继承父类, 疑问: 重写方法, 和字段时为什么不加 override*/
+/*子类继承父类*/
 class Location(val xc: Int, val yc: Int, val zc: Int) extends Point(xc, yc){
     var z: Int = zc
 

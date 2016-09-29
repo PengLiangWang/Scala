@@ -19,9 +19,9 @@ class Point(xc: Int, yc: Int){
 
 object ClassTest{
     def main(args: Array[String]){
-        val pt = new Point(10, 20);
+        val pt = new Point(10, 20);   //构造对象
 
-        //移动到新的位置
+        //调用方法,移动到新的位置
         pt.move(10, 10)
     }
 }
