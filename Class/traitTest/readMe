@@ -1,0 +1,16 @@
+特质扩展类  --快学scala第10章12节
+trait LoggerException extends Exception with Loggerr{
+     def log {log(getMessage())}    
+}
+
+Exception 是类
+Loggerr 是特质
+
+getMessage()方法调用了从 Exception 超类中继承下来的
+
+class UnhappyException extends LoggerException{   //该类扩展自特质 LoggerException
+    override log getMessage()="test!"    
+}
+
+
+LoggerException的超类也自动成为 UnhappyException 超类
