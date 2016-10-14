@@ -24,9 +24,22 @@ object ListTest{
       val empty1: List[Nothing] = List()
       val empty2 = Nil
 
-       def main(args: Array[String]){
-            println(site1.head)    
-            println(site1(1))
-            println(dim1(1)(1))
-       }
+
+      //匹配模式求列表的和
+      def sum(lst: List[Int]): Int = lst match{
+          case Nil => 0
+          case h :: t => h + sum(t)  //h是列表头(lst.head), t是链表尾(lst.tail)
+      } 
+
+     def main(args: Array[String]){
+         println(site1.head)    
+         println(site1(1))
+         println(dim1(1)(1))
+
+         println("列表元素和: " + sum(nums1))
+  
+         var MapList = site1.map(_.toUpperCase)
+         println(MapList)
+
+    }
 }

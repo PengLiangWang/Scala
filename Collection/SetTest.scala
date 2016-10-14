@@ -3,10 +3,11 @@
 */
 object SetTest{
    var set = Set(1, 2, 3) 
+   //var set: Set[Int] = Set(1, 2, 3) 
 
    def main(args: Array[String]){
        println(set.getClass.getName)
-       println(set.exists(_ % 2 == 0))
+       println(set.exists(_ % 2 == 0))   //指定条件的元素是否存在exists的参数是Int => Boolean类型, 返回Boolean类型
        println(set.drop(1))
 
 

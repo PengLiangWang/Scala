@@ -1,3 +1,4 @@
+//偏函数
 import java.util.Date
 
 object LogWithDate{
@@ -16,3 +17,12 @@ object LogWithDate{
         println(date + "------" + message);    
     }
 } 
+
+
+/*
+偏函数：
+val f: PartialFunction[Char, Int] = {case '+' => 1; case '-' => -1}
+f('-') // 返回 -1
+f.DefinedAt('0')   //没有匹配到， 返回 false
+f('0')  //没有匹配到，抛异常
+*/

@@ -5,11 +5,13 @@ class HandleValue(a: Int, b: Int, c: Int){
 }
 
 
+
 object SumHigherFun extends App{
     
     def sum(a: Int, b: Int, c: Int) = a+b+c
     def dec(a: Int, b: Int, c: Int) = a-b-c
 
+
     val v = new HandleValue(1,2,3);
-    println(v.calculate(sum))
+    println("a + b + c = " + v.calculate(sum))
 }
